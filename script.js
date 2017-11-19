@@ -1,4 +1,4 @@
-function getFirstFullStop(str, start, sentences) { // get first full stop out of brackets
+function getFirstFullStop(str, start, sentences) { // get nth full stop out of brackets
     var count = 0;
     while (true) {
         var index = str.indexOf(".", start);
@@ -15,6 +15,11 @@ function getFirstFullStop(str, start, sentences) { // get first full stop out of
             start = index+1;
         }         
     }
+}
+
+function remove(id) {
+    var elem = document.getElementById(id);
+    return elem.parentNode.removeChild(elem);
 }
 
 function asyncGet(url, callback) {
@@ -36,6 +41,7 @@ function stripTags(str) {
 }
 
 function handleClick() {
+    remove("padder");
     var input = document.getElementById("search").value,
         url = "https://cors.io/?https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=" + input;
     asyncGet(url, function(response) {
@@ -75,5 +81,6 @@ window.onload = function () {
         if (e.keyCode === 13) {
             handleClick();
         }
-    })
+    });
+    
 }

@@ -1,12 +1,18 @@
 body {
-    text-align: center;
-    background-color: #ffe4e1;
+    background-color: #F5F3EE;
+}
+
+#padder {
+    padding-top: 30vh;
 }
 
 .header {
-    color: #7373ff;
-    padding-bottom: 3vh;
+    text-align: center;
+    color: #4A96AD;
+    padding-bottom: 2.5vh;
+    padding-top: 1vh;
     font-size: 45px;
+    margin: 0;
 }
 
 .input {
@@ -75,7 +81,8 @@ body {
 .article {
     margin: 0 auto;
     width: 60%;
-    background-color: #e1fcff;
+    border-radius: 10px;
+    background-color: #7D1935;
     padding: 0px 7px 3px 12px;
     margin-bottom: 5px;
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -86,7 +93,7 @@ body {
 }
 
 .article:hover {
-    border-left: 5px solid #FFA500;
+    border-left: 5px solid #197d61;
     box-shadow: 0 2px 3px rgba(0,0,0,0.15);
     transition: box-shadow 0.3s ease-in-out;
 }
@@ -95,12 +102,12 @@ body {
     font-size: 28px;
     padding-top: 10px;
     margin-bottom: 8px;
-    color: #FF7373;
+    color: #FFFFFF;
     text-decoration: underline;
 }
 
 .summary {
-    color: #73b9ff;
+    color: #FFFFFF;
     font-weight: bold;
     font-size: 22px;
 }

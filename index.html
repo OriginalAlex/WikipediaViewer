@@ -8,12 +8,15 @@
         <meta name="Alex" charset="UTF-8">
     </head>
     <body>
-        <h1 class="header">Wikipedia Viewer</div>
-        <div class="input">
-            <input type="text" id="search" name="search" placeholder="Search...">
-            <input type="button" class="searchBtn" value="Search" onclick="handleClick()">
-            <a target="_blank" href="https://en.wikipedia.org/wiki/Special:Random"><input type="button" class="searchBtn" value="Feelin' Lucky?"></a>
+        <div id="padder"></div>
+        <div id="container">
+            <h1 class="header">Wikipedia Viewer</h1>
+            <div class="input">
+                <input type="text" id="search" name="search" placeholder="Search...">
+                <input type="button" class="searchBtn" value="Search" onclick="handleClick()">
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Special:Random"><input type="button" class="searchBtn" value="Feelin' Lucky?"></a>
+            </div>
+            <div class="articleContainer"></div>
         </div>
-        <div class="articleContainer"></div>
     </body>
 </html>
