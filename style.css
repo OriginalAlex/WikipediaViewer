@@ -1,0 +1,117 @@
+body {
+    text-align: center;
+    background-color: #ffe4e1;
+}
+
+.header {
+    color: #7373ff;
+    padding-bottom: 3vh;
+    font-size: 45px;
+}
+
+.input {
+    text-align: center;
+}
+
+#search:focus {
+    width: 40%;
+    outline-width: 0;
+}
+
+#search {
+    background-image: url("resources/search.png");
+    background-size: 15px 15px;
+    background-position: 5px 50%;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: 20%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    border-radius: 10px;
+    font-family: "Roboto";
+    font-size: 18px;
+    border-color: #B8860B;
+}
+
+.searchBtn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 26;
+  -moz-border-radius: 26;
+  border-radius: 26px;
+  text-shadow: 1px 1px 3px #666666;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 23px;
+  padding: 5px 15px 5px 15px;
+  border: solid #1f628d 1px;
+  text-decoration: none;
+}
+
+.searchBtn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.searchBtn:focus {
+    outline: 0;
+}
+
+.searchBtn:active {
+    transform: translateY(1px);
+}
+
+.article {
+    margin: 0 auto;
+    width: 60%;
+    background-color: #e1fcff;
+    padding: 0px 7px 3px 12px;
+    margin-bottom: 5px;
+}
+
+.article:hover {
+    border-left: 5px solid #FFA500;
+}
+
+.title {
+    font-size: 28px;
+    padding-top: 10px;
+    margin-bottom: 8px;
+    color: #FF7373;
+    text-decoration: underline;
+}
+
+.summary {
+    color: #73b9ff;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.articleContainer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #484848;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #484848;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #484848;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #484848;
+}
