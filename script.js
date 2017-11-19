@@ -37,13 +37,13 @@ function stripTags(str) {
 
 function handleClick() {
     var input = document.getElementById("search").value,
-        url = "https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=" + input;
+        url = "https://cors.io/?https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=" + input;
     asyncGet(url, function(response) {
         response = JSON.parse(response);
         var articles = response.query.search;
         const container = document.getElementsByClassName("articleContainer")[0];
         container.innerHTML = "";
-        var query = "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&explaintext=1&exintro=1&titles=";
+        var query = "https://cors.io/?https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&explaintext=1&exintro=1&titles=";
         for (var i = 0; i < articles.length; i++) {
             var article = articles[i];
             query += article.title;
