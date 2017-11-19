@@ -1,5 +1,5 @@
-function getFirstFullStop(str) { // get first full stop out of brackets
-    var start = 0;
+function getFirstFullStop(str, start, sentences) { // get first full stop out of brackets
+    var count = 0;
     while (true) {
         var index = str.indexOf(".", start);
         if (index == -1) {
@@ -10,7 +10,9 @@ function getFirstFullStop(str) { // get first full stop out of brackets
         if ((index > straight1 && index < straight2) || (index > other1 && index < other2)) { // the full stop comes before a bracket
             start = index+1;
         } else {
-            return str.substring(0, index+1);
+            count++
+            if (count == sentences) return str.substring(0, index+1);
+            start = index+1;
         }         
     }
 }
@@ -61,7 +63,7 @@ function handleClick() {
                 for (var j = 0; j < 2 && j < parts.length; j++) {
                     summary += parts[j] + ".";
                 }
-                document.getElementById(page.title).innerHTML = getFirstFullStop(page.extract);
+                document.getElementById(page.title).innerHTML = getFirstFullStop(page.extract, 0, 2);
             }
         });
     }); 
