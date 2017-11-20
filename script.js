@@ -87,7 +87,7 @@ function loadMore(x, container) {
         query += article.title.split(" ").join("_");
         if (m != articles.length-1) query += "|";
         container.innerHTML +=
-        '<a target="_blank" href="https://en.wikipedia.org/?curid=' + article.pageid + '"><div class="article"><h3 class="title">' + article.title + '</h3><div class="summary" id="' + article.title + '"></div></div></a>';
+        '<a target="_blank" class="link" href="https://en.wikipedia.org/?curid=' + article.pageid + '"><div class="article"><h3 class="title">' + article.title + '</h3><div class="summary" id="' + article.title + '"></div></div></a>';
     }
     if (m < x + articleNum + 2) { // the loop did not run fully ie. we ran out of articles
         var load = document.getElementById("loadMore");

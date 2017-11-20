@@ -80,7 +80,7 @@ body {
 
 .article {
     margin: 0 auto;
-    width: 60%;
+    width: 100%;
     border-radius: 10px;
     background-color: #F5FFC6;
     padding: 0px 7px 3px 12px;
@@ -112,6 +112,11 @@ body {
     font-size: 22px;
 }
 
+.articleContainer {
+    width: 60%;
+    margin: 0 auto;
+}
+
 .articleContainer a {
     text-decoration: none;
     color: inherit;
@@ -140,7 +145,7 @@ body {
 
 #loadMore:hover {
     background-color: #ADD8E6;
-    color: #33739E;
+    color: #E6E6C7;
     cursor: pointer;
 }
 
